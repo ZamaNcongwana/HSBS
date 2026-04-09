@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta property="og:title" content="Welcome to Hair by Sane Beauty Service">
-<meta name="description" content="Step into Hair by Sane, where beauty, confidence, and self-care unite. Located in Mpumalanga Township, Hammarsdale Unit 4 ebhareni, opposite Nosipho Little People Day Care, our studio is dedicated to offering exceptional hair and beauty services tailored to help you look and feel your best."> 
+<meta name="description" content="Step into Hair by Sane, where beauty, confidence, and self-care unite.">
+
 <title>Hair by Sane Beauty Service | Booking</title>
- 
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-<!--=============== FAVICON ===============-->
+
 <link rel="shortcut icon" href="Hair-by-Sane-Beauty-Service-HSBS_htm_files/35.jpg" type="image/x-icon">  
- 
+
 <style>
 
 body{
@@ -87,12 +88,57 @@ gap:20px;
 .card{
 background:#1b1b1b;
 padding:25px;
-border-radius:10px;
+border-radius:12px;
 transition:.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 .card:hover{
 transform:translateY(-5px);
+}
+
+/* ======================
+YOUTUBE VIDEO STYLING
+====================== */
+
+.video-section{
+max-width:1100px;
+margin:80px auto;
+padding:20px;
+background:rgba(0,0,0,0.35);
+border-radius:15px;
+backdrop-filter:blur(10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.video-wrapper{
+position:relative;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:12px;
+}
+
+.video-wrapper iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:0;
+}
+
+/* ======================
+BOOKING EMBED STYLING
+====================== */
+
+.booking-container{
+max-width:1100px;
+margin:80px auto;
+padding:25px;
+background:rgba(0,0,0,0.4);
+border-radius:15px;
+box-shadow:0 10px 35px rgba(0,0,0,0.45);
 }
 
 /* BOOKING FORM */
@@ -108,7 +154,7 @@ gap:15px;
 input, select, textarea{
 padding:12px;
 border:none;
-border-radius:5px;
+border-radius:6px;
 font-size:16px;
 }
 
@@ -119,14 +165,14 @@ border:none;
 font-size:18px;
 font-weight:bold;
 cursor:pointer;
-border-radius:5px;
+border-radius:6px;
 }
 
 button:hover{
 background:#d9a900;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -138,6 +184,7 @@ padding:15px;
 border-radius:50%;
 font-size:22px;
 text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* FOOTER */
@@ -167,18 +214,24 @@ margin-top:40px;
 <h1>Professional Beauty & Wig Studio</h1>
 </section>
 
-<iframe width="100%" height="389" src="https://www.youtube.com/embed/BzWWoB2ot_w?si=PWeNoA4qysAaxD4k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>  
+<!-- YOUTUBE VIDEO -->
+<div class="video-section">
+<div class="video-wrapper">
+<iframe src="https://www.youtube.com/embed/BzWWoB2ot_w"
+title="YouTube video player"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
+</div>
 
 <!-- ABOUT -->
 <section>
 <h2>Welcome</h2>
 <p>
-Welcome to our Beauty Studio â€” a space dedicated to confidence, self-care,
+Welcome to our Beauty Studio — a space dedicated to confidence, self-care,
 and professional beauty services. We specialize in wig care, installations,
-and eyelash enhancements tailored to suit every clientâ€™s style and needs.
-
-Our mission is to deliver quality service in a relaxing environment where
-clients feel beautiful, valued, and confident after every visit.
+and eyelash enhancements tailored to suit every client’s style and needs.
 </p>
 </section>
 
@@ -190,34 +243,22 @@ clients feel beautiful, valued, and confident after every visit.
 
 <div class="card">
 <h3>Wig Care & Maintenance</h3>
-<p>
-Professional wig washing, conditioning, and treatment services designed
-to restore softness, shine, and longevity.
-</p>
+<p>Professional wig washing and treatment services.</p>
 </div>
 
 <div class="card">
 <h3>Wig Installation</h3>
-<p>
-Secure and natural-looking installations including basic installs,
-customisation, and frontal ponytail styling.
-</p>
+<p>Secure and natural-looking installations.</p>
 </div>
 
 <div class="card">
 <h3>Eyelash Extensions</h3>
-<p>
-Classic and hybrid eyelash extensions that enhance your natural beauty
-while maintaining comfort and durability.
-</p>
+<p>Classic and hybrid eyelash enhancements.</p>
 </div>
 
 <div class="card">
 <h3>Beauty Styling</h3>
-<p>
-Personalized beauty styling suitable for everyday looks,
-events, photoshoots, and special occasions.
-</p>
+<p>Perfect styling for events and everyday beauty.</p>
 </div>
 
 </div>
@@ -226,27 +267,35 @@ events, photoshoots, and special occasions.
 <!-- SPECIALS -->
 <section id="specials">
 <h2>Monthly Beauty Specials</h2>
-
 <p style="text-align:center;max-width:700px;margin:auto;">
-We offer exciting monthly beauty specials and combination packages
-for our clients. Our promotions change regularly, giving you new
-self-care opportunities every month. Visit our booking section
-to view available services and secure your appointment.
+We offer exciting monthly beauty specials and combination packages.
 </p>
-
 </section>
 
-<!-- BOOKING -->
- <!-- Embedded booking begin --><div class="embedded-booking" data-url="https://ladyfairhairbeautysalon.trafft.com" data-query="&t=s&uuid=ceceace4-8acc-4a9b-857e-eccf742e65ca" data-lang="en" data-autoresize="1" data-showsidebar="1" style="min-width: 100%; height: 768px;"></div><script type="text/javascript" src="https://ladyfairhairbeautysalon.trafft.com/embed.js" async></script><!-- Embedded booking end -->
+<!-- TRAFFT BOOKING -->
+<div class="booking-container">
+
+<div class="embedded-booking"
+data-url="https://ladyfairhairbeautysalon.trafft.com"
+data-query="&t=s&uuid=ceceace4-8acc-4a9b-857e-eccf742e65ca"
+data-lang="en"
+data-autoresize="1"
+data-showsidebar="1"
+style="min-width:100%;height:768px;">
+</div>
+
+<script src="https://ladyfairhairbeautysalon.trafft.com/embed.js" async></script>
+
+</div>
+
+<!-- BOOKING FORM -->
 <section id="booking">
 <h2>Book Your Appointment</h2>
 
 <form action="https://formspree.io/f/xrbzgajo" method="POST">
 
 <input type="text" placeholder="Full Name" required>
-
 <input type="tel" placeholder="Phone Number" required>
-
 <input type="email" placeholder="Email Address">
 
 <select required>
@@ -259,16 +308,11 @@ to view available services and secure your appointment.
 </select>
 
 <input type="date" required>
-
 <textarea placeholder="Additional Notes"></textarea>
 
 <button type="submit">Confirm Booking</button>
 
 </form>
-
-<p style="text-align:center;margin-top:20px;">
-After booking, our team will confirm your appointment.
-</p>
 
 </section>
 
@@ -277,7 +321,7 @@ After booking, our team will confirm your appointment.
 <p>© 2026 Beauty Studio | All Rights Reserved</p>
 </footer>
 
-<!-- WHATSAPP CONTACT -->
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/2765570431" target="_blank">💬</a>
 
 </body>
